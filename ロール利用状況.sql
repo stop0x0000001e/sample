@@ -1,3 +1,5 @@
+-- これはPCSでロール機能を利用中のプロジェクトを特定するためのTSQLスクリプトです。
+
 select MRoleGroup.ProjectId, MProject.ProjectName, MRoleGroup.RoleGroupId, MRoleGroup.RoleGroupName, SettingNum, MemberNum
 from MRoleGroup
 left outer join MProject
